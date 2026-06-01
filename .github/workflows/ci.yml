@@ -39,8 +39,8 @@ jobs:
         run: |
           xcodebuild -workspace ADAR2.xcworkspace -scheme ADAR2 \
             -sdk iphonesimulator CODE_SIGNING_ALLOWED=NO build
-      - name: Generate lcov coverage                                                                                                                                                                                        
-        run: |                                                                                                                                                                                                              
+      - name: Generate lcov coverage
+        run: |
           for package in \
             ADAR2Shared \
             ADAR2Core \
