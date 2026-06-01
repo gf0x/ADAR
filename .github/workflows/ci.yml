@@ -42,26 +42,26 @@ jobs:
       - name: Generate lcov coverage                                                                                                                                                                                        
         run: |                                                                                                                                                                                                              
           for package in \
-            ADAR2Shared \ 
-            ADAR2Core \   
+            ADAR2Shared \
+            ADAR2Core \
             ADAR2BugDetector \
             ADAR2AdvancedForceDirectedVisualizer \
             ADAR2NaiveForceDirectedVisualizer \
-            ADAR2MLVisualizer \         
-            ADAR2SwiftAnalyzer                                                                                                                                                                                              
-          do          
+            ADAR2MLVisualizer \
+            ADAR2SwiftAnalyzer
+          do
             profdata="$package/.build/debug/codeco
-            [ -f "$profdata" ] || continue    
+            [ -f "$profdata" ] || continue
             find "$package/.build/debug" -name "*.xctest" | while read xctest; do
-              binary_name=$(basename "$xctest" .xctest) 
+              binary_name=$(basename "$xctest" .xctest)
               binary="$xctest/Contents/MacOS/$binary_name"
               [ -f "$binary" ] || continue
-              llvm-cov export \  
-                -format=lcov \  
-                -instr-profile="$profdata" \   
-                "$binary" \   
+              llvm-cov export \
+                -format=lcov \
+                -instr-profile="$profdata" \
+                "$binary" \
                  >> coverage.lcov
-            done 
+            done
           done
       - name: Upload coverage
         uses: codecov/codecov-action@v6
