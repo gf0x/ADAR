@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2Shared">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2Core">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2SwiftAnalyzer">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2AdvancedForceDirectedVisualizer">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2NaiveForceDirectedVisualizer">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2MLVisualizer">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2VisualisationTestComponent">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2BugDetector">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2ModelBuilder">
+   </FileRef>
+   <FileRef
+      location = "group:ADAR2/ADAR2.xcodeproj">
+   </FileRef>
+</Workspace>

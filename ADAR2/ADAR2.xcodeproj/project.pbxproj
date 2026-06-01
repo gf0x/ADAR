@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4A07C44E47422DA434D37B /* MainExperienceViewController+MultipeerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C99E96C976841D59C6AF439 /* MainExperienceViewController+MultipeerDelegate.swift */; };
+		0CC87A84260842AE9E960E29 /* FileSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B3600C970404D9FD8613F /* FileSession.swift */; };
+		0EAF0EE6846D44B5929F6B46 /* MainExperienceViewController+Subgraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C31ACED6E46B1BD340B9F /* MainExperienceViewController+Subgraph.swift */; };
+		27BF6ECABD5C4AF29FC3C038 /* GraphSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4EA7DAD0D4EB5B28EBABF /* GraphSceneBuilder.swift */; };
+		29159E44A09446C699E689A3 /* FileSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B3600C970404D9FD8613F /* FileSession.swift */; };
+		3609CBF8F86D44FD86D8B324 /* SubgraphSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9252365164B5D9542BB10 /* SubgraphSheetViewController.swift */; };
+		569CCD0377274293BBC66C96 /* GraphSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4EA7DAD0D4EB5B28EBABF /* GraphSceneBuilder.swift */; };
+		6143CD5492C64AAD93304E4F /* MainExperienceViewController+Subgraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C31ACED6E46B1BD340B9F /* MainExperienceViewController+Subgraph.swift */; };
+		7EFD1D970BEB4AF78D6651CD /* SubgraphSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9252365164B5D9542BB10 /* SubgraphSheetViewController.swift */; };
+		A6835BFE05AE47EAB39B0EAA /* MainExperienceViewController+MultipeerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C99E96C976841D59C6AF439 /* MainExperienceViewController+MultipeerDelegate.swift */; };
+		B2A1C3D4E5F6A7B8C9D0E1F2 /* EdgeLegendSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* EdgeLegendSheetViewController.swift */; };
+		C3D4E5F6A7B8C9D0E1F2A3B4 /* EdgeLegendSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* EdgeLegendSheetViewController.swift */; };
+		FA000A0400000001000A0000 /* ADAR2NaiveForceDirectedVisualizer in Frameworks */ = {isa = PBXBuildFile; productRef = FA000A0200000001000A0000 /* ADAR2NaiveForceDirectedVisualizer */; };
+		FA000A0500000001000A0000 /* ADAR2NaiveForceDirectedVisualizer in Frameworks */ = {isa = PBXBuildFile; productRef = FA000A0300000001000A0000 /* ADAR2NaiveForceDirectedVisualizer */; };
+		FA1BB7EB2D2BBDAF000925BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA5A0BB2B72C611004D0D5D /* Assets.xcassets */; };
+		FA1BB7EC2D2BBDD5000925BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA5A0BB2B72C611004D0D5D /* Assets.xcassets */; };
+		FA39BD9B2E19622F00791E8B /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39BD9A2E19622700791E8B /* DisplayMode.swift */; };
+		FA39BD9C2E19622F00791E8B /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39BD9A2E19622700791E8B /* DisplayMode.swift */; };
+		FA39BDA02E19775E00791E8B /* ADARSCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39BD9F2E19775800791E8B /* ADARSCNNode.swift */; };
+		FA39BDA12E19775E00791E8B /* ADARSCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39BD9F2E19775800791E8B /* ADARSCNNode.swift */; };
+		FA666E8D2C2335370044B430 /* UIApplication+Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA666E8C2C2335370044B430 /* UIApplication+Env.swift */; };
+		FA8694802ED3748700E2394E /* ItemSizeScalarSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86947F2ED3748700E2394E /* ItemSizeScalarSheetViewController.swift */; };
+		FA8694812ED3748700E2394E /* ItemSizeScalarSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86947F2ED3748700E2394E /* ItemSizeScalarSheetViewController.swift */; };
+		FA8F82BC2E199D61004A4462 /* ADAR2BugDetector in Frameworks */ = {isa = PBXBuildFile; productRef = FA8F82BB2E199D61004A4462 /* ADAR2BugDetector */; };
+		FA8F82BE2E199D69004A4462 /* ADAR2BugDetector in Frameworks */ = {isa = PBXBuildFile; productRef = FA8F82BD2E199D69004A4462 /* ADAR2BugDetector */; };
+		FAA5A0B32B72C611004D0D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0B22B72C611004D0D5D /* AppDelegate.swift */; };
+		FAA5A0B52B72C611004D0D5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0B42B72C611004D0D5D /* SceneDelegate.swift */; };
+		FAA5A0BA2B72C611004D0D5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5A0B82B72C611004D0D5D /* Main.storyboard */; };
+		FAA5A0BF2B72C611004D0D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5A0BD2B72C611004D0D5D /* LaunchScreen.storyboard */; };
+		FAA5A0D22B72C661004D0D5D /* UserRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0C82B72C661004D0D5D /* UserRole.swift */; };
+		FAA5A0D32B72C661004D0D5D /* SettingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0C92B72C661004D0D5D /* SettingsProvider.swift */; };
+		FAA5A0D42B72C661004D0D5D /* ADARConnectionKind+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CB2B72C661004D0D5D /* ADARConnectionKind+UIColor.swift */; };
+		FAA5A0D52B72C661004D0D5D /* CylinderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CC2B72C661004D0D5D /* CylinderLine.swift */; };
+		FAA5A0D62B72C661004D0D5D /* SIMD+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CD2B72C661004D0D5D /* SIMD+extensions.swift */; };
+		FAA5A0D72B72C661004D0D5D /* SCNVector3+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CF2B72C661004D0D5D /* SCNVector3+Operators.swift */; };
+		FAA5A0D82B72C661004D0D5D /* NodeTransformData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0D12B72C661004D0D5D /* NodeTransformData.swift */; };
+		FAA5A0E62B72C6F5004D0D5D /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0DC2B72C6F5004D0D5D /* IntroViewController.swift */; };
+		FAA5A0E72B72C6F5004D0D5D /* MainExperienceViewController+ARSCNDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0DE2B72C6F5004D0D5D /* MainExperienceViewController+ARSCNDelegate.swift */; };
+		FAA5A0E82B72C6F5004D0D5D /* MainExperienceViewController+NodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0DF2B72C6F5004D0D5D /* MainExperienceViewController+NodeBuilder.swift */; };
+		FAA5A0E92B72C6F5004D0D5D /* MainExperienceViewController+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E02B72C6F5004D0D5D /* MainExperienceViewController+Gestures.swift */; };
+		FAA5A0EA2B72C6F5004D0D5D /* MainExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E12B72C6F5004D0D5D /* MainExperienceViewController.swift */; };
+		FAA5A0EB2B72C6F5004D0D5D /* MainExperienceController+ARCoachingOverlayViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E32B72C6F5004D0D5D /* MainExperienceController+ARCoachingOverlayViewDelegate.swift */; };
+		FAA5A0EC2B72C6F5004D0D5D /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E52B72C6F5004D0D5D /* MultipeerSession.swift */; };
+		FAA5A0F12B72C7D1004D0D5D /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0EF2B72C7D1004D0D5D /* MessageLabel.swift */; };
+		FAA5A0F22B72C7D1004D0D5D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0F02B72C7D1004D0D5D /* CameraView.swift */; };
+		FAA5A0F62B72CA0B004D0D5D /* ADAR2Shared in Frameworks */ = {isa = PBXBuildFile; productRef = FAA5A0F52B72CA0B004D0D5D /* ADAR2Shared */; };
+		FAAC15F82D2BB954006D829B /* MainExperienceViewController+NodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0DF2B72C6F5004D0D5D /* MainExperienceViewController+NodeBuilder.swift */; };
+		FAAC15F92D2BB954006D829B /* MainExperienceViewController+ARSCNDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0DE2B72C6F5004D0D5D /* MainExperienceViewController+ARSCNDelegate.swift */; };
+		FAAC15FA2D2BB954006D829B /* SIMD+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CD2B72C661004D0D5D /* SIMD+extensions.swift */; };
+		FAAC15FB2D2BB954006D829B /* UIApplication+Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA666E8C2C2335370044B430 /* UIApplication+Env.swift */; };
+		FAAC15FC2D2BB954006D829B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0F02B72C7D1004D0D5D /* CameraView.swift */; };
+		FAAC15FD2D2BB954006D829B /* ADARConnectionKind+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CB2B72C661004D0D5D /* ADARConnectionKind+UIColor.swift */; };
+		FAAC15FE2D2BB954006D829B /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0EF2B72C7D1004D0D5D /* MessageLabel.swift */; };
+		FAAC15FF2D2BB954006D829B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0B22B72C611004D0D5D /* AppDelegate.swift */; };
+		FAAC16002D2BB954006D829B /* UserRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0C82B72C661004D0D5D /* UserRole.swift */; };
+		FAAC16012D2BB954006D829B /* MainExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E12B72C6F5004D0D5D /* MainExperienceViewController.swift */; };
+		FAAC16022D2BB954006D829B /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E52B72C6F5004D0D5D /* MultipeerSession.swift */; };
+		FAAC16032D2BB954006D829B /* SCNVector3+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CF2B72C661004D0D5D /* SCNVector3+Operators.swift */; };
+		FAAC16042D2BB954006D829B /* CylinderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0CC2B72C661004D0D5D /* CylinderLine.swift */; };
+		FAAC16052D2BB954006D829B /* MainExperienceController+ARCoachingOverlayViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E32B72C6F5004D0D5D /* MainExperienceController+ARCoachingOverlayViewDelegate.swift */; };
+		FAAC16062D2BB954006D829B /* MainExperienceViewController+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0E02B72C6F5004D0D5D /* MainExperienceViewController+Gestures.swift */; };
+		FAAC16072D2BB954006D829B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0B42B72C611004D0D5D /* SceneDelegate.swift */; };
+		FAAC16082D2BB954006D829B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0DC2B72C6F5004D0D5D /* IntroViewController.swift */; };
+		FAAC16092D2BB954006D829B /* NodeTransformData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0D12B72C661004D0D5D /* NodeTransformData.swift */; };
+		FAAC160A2D2BB954006D829B /* SettingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5A0C92B72C661004D0D5D /* SettingsProvider.swift */; };
+		FAAC160C2D2BB954006D829B /* ADAR2Shared in Frameworks */ = {isa = PBXBuildFile; productRef = FAAC15F62D2BB954006D829B /* ADAR2Shared */; };
+		FAAC160E2D2BB954006D829B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5A0BD2B72C611004D0D5D /* LaunchScreen.storyboard */; };
+		FAAC16102D2BB954006D829B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5A0B82B72C611004D0D5D /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C99E96C976841D59C6AF439 /* MainExperienceViewController+MultipeerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainExperienceViewController+MultipeerDelegate.swift"; sourceTree = "<group>"; };
+		1B5B3600C970404D9FD8613F /* FileSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSession.swift; sourceTree = "<group>"; };
+		882C31ACED6E46B1BD340B9F /* MainExperienceViewController+Subgraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainExperienceViewController+Subgraph.swift"; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* EdgeLegendSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeLegendSheetViewController.swift; sourceTree = "<group>"; };
+		F3B4EA7DAD0D4EB5B28EBABF /* GraphSceneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphSceneBuilder.swift; sourceTree = "<group>"; };
+		FA39BD9A2E19622700791E8B /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
+		FA39BD9F2E19775800791E8B /* ADARSCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADARSCNNode.swift; sourceTree = "<group>"; };
+		FA666E8C2C2335370044B430 /* UIApplication+Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Env.swift"; sourceTree = "<group>"; };
+		FA86947F2ED3748700E2394E /* ItemSizeScalarSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeScalarSheetViewController.swift; sourceTree = "<group>"; };
+		FAA5A0AF2B72C611004D0D5D /* ADAR2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADAR2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA5A0B22B72C611004D0D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA5A0B42B72C611004D0D5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAA5A0B92B72C611004D0D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA5A0BB2B72C611004D0D5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA5A0BE2B72C611004D0D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA5A0C02B72C611004D0D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA5A0C82B72C661004D0D5D /* UserRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRole.swift; sourceTree = "<group>"; };
+		FAA5A0C92B72C661004D0D5D /* SettingsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsProvider.swift; sourceTree = "<group>"; };
+		FAA5A0CB2B72C661004D0D5D /* ADARConnectionKind+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ADARConnectionKind+UIColor.swift"; sourceTree = "<group>"; };
+		FAA5A0CC2B72C661004D0D5D /* CylinderLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CylinderLine.swift; sourceTree = "<group>"; };
+		FAA5A0CD2B72C661004D0D5D /* SIMD+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SIMD+extensions.swift"; sourceTree = "<group>"; };
+		FAA5A0CF2B72C661004D0D5D /* SCNVector3+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Operators.swift"; sourceTree = "<group>"; };
+		FAA5A0D12B72C661004D0D5D /* NodeTransformData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTransformData.swift; sourceTree = "<group>"; };
+		FAA5A0DC2B72C6F5004D0D5D /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		FAA5A0DE2B72C6F5004D0D5D /* MainExperienceViewController+ARSCNDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainExperienceViewController+ARSCNDelegate.swift"; sourceTree = "<group>"; };
+		FAA5A0DF2B72C6F5004D0D5D /* MainExperienceViewController+NodeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainExperienceViewController+NodeBuilder.swift"; sourceTree = "<group>"; };
+		FAA5A0E02B72C6F5004D0D5D /* MainExperienceViewController+Gestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainExperienceViewController+Gestures.swift"; sourceTree = "<group>"; };
+		FAA5A0E12B72C6F5004D0D5D /* MainExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainExperienceViewController.swift; sourceTree = "<group>"; };
+		FAA5A0E32B72C6F5004D0D5D /* MainExperienceController+ARCoachingOverlayViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainExperienceController+ARCoachingOverlayViewDelegate.swift"; sourceTree = "<group>"; };
+		FAA5A0E52B72C6F5004D0D5D /* MultipeerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		FAA5A0EF2B72C7D1004D0D5D /* MessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageLabel.swift; sourceTree = "<group>"; };
+		FAA5A0F02B72C7D1004D0D5D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		FAAC16142D2BB954006D829B /* ADAR2 (Demo mode).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ADAR2 (Demo mode).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE9252365164B5D9542BB10 /* SubgraphSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubgraphSheetViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA5A0AC2B72C611004D0D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8F82BC2E199D61004A4462 /* ADAR2BugDetector in Frameworks */,
+				FAA5A0F62B72CA0B004D0D5D /* ADAR2Shared in Frameworks */,
+				FA000A0400000001000A0000 /* ADAR2NaiveForceDirectedVisualizer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAC160B2D2BB954006D829B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8F82BE2E199D69004A4462 /* ADAR2BugDetector in Frameworks */,
+				FAAC160C2D2BB954006D829B /* ADAR2Shared in Frameworks */,
+				FA000A0500000001000A0000 /* ADAR2NaiveForceDirectedVisualizer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA39BD9E2E19629B00791E8B /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				FA39BD9A2E19622700791E8B /* DisplayMode.swift */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		FA666E8B2C2335210044B430 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FA666E8C2C2335370044B430 /* UIApplication+Env.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FA8F82BA2E199D61004A4462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA5A0A62B72C611004D0D5D = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0B12B72C611004D0D5D /* ADAR2 */,
+				FA8F82BA2E199D61004A4462 /* Frameworks */,
+				FAA5A0B02B72C611004D0D5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA5A0B02B72C611004D0D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0AF2B72C611004D0D5D /* ADAR2.app */,
+				FAAC16142D2BB954006D829B /* ADAR2 (Demo mode).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA5A0B12B72C611004D0D5D /* ADAR2 */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0D92B72C665004D0D5D /* AppConfig */,
+				FAA5A0C62B72C661004D0D5D /* Model */,
+				FAA5A0E42B72C6F5004D0D5D /* Multipeer */,
+				FAA5A0DA2B72C6F5004D0D5D /* View */,
+				FA666E8B2C2335210044B430 /* Util */,
+				FAA5A0ED2B72C767004D0D5D /* Resources */,
+				FAA5A0C02B72C611004D0D5D /* Info.plist */,
+			);
+			path = ADAR2;
+			sourceTree = "<group>";
+		};
+		FAA5A0C62B72C661004D0D5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA39BD9F2E19775800791E8B /* ADARSCNNode.swift */,
+				FA39BD9E2E19629B00791E8B /* Modes */,
+				FAA5A0C72B72C661004D0D5D /* Settings */,
+				FAA5A0CA2B72C661004D0D5D /* Drawing */,
+				FAA5A0CE2B72C661004D0D5D /* Util */,
+				FAA5A0D02B72C661004D0D5D /* Connectivity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAA5A0C72B72C661004D0D5D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0C82B72C661004D0D5D /* UserRole.swift */,
+				FAA5A0C92B72C661004D0D5D /* SettingsProvider.swift */,
+				1B5B3600C970404D9FD8613F /* FileSession.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FAA5A0CA2B72C661004D0D5D /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0CB2B72C661004D0D5D /* ADARConnectionKind+UIColor.swift */,
+				FAA5A0CC2B72C661004D0D5D /* CylinderLine.swift */,
+				FAA5A0CD2B72C661004D0D5D /* SIMD+extensions.swift */,
+				F3B4EA7DAD0D4EB5B28EBABF /* GraphSceneBuilder.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		FAA5A0CE2B72C661004D0D5D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0CF2B72C661004D0D5D /* SCNVector3+Operators.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FAA5A0D02B72C661004D0D5D /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0D12B72C661004D0D5D /* NodeTransformData.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		FAA5A0D92B72C665004D0D5D /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0B22B72C611004D0D5D /* AppDelegate.swift */,
+				FAA5A0B42B72C611004D0D5D /* SceneDelegate.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		FAA5A0DA2B72C6F5004D0D5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0DB2B72C6F5004D0D5D /* Intro */,
+				FAA5A0DD2B72C6F5004D0D5D /* MainExperience */,
+				FAA5A0EE2B72C7D1004D0D5D /* AtomicView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAA5A0DB2B72C6F5004D0D5D /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0DC2B72C6F5004D0D5D /* IntroViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		FAA5A0DD2B72C6F5004D0D5D /* MainExperience */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0DE2B72C6F5004D0D5D /* MainExperienceViewController+ARSCNDelegate.swift */,
+				FAA5A0DF2B72C6F5004D0D5D /* MainExperienceViewController+NodeBuilder.swift */,
+				FAA5A0E02B72C6F5004D0D5D /* MainExperienceViewController+Gestures.swift */,
+				FAA5A0E32B72C6F5004D0D5D /* MainExperienceController+ARCoachingOverlayViewDelegate.swift */,
+				FAA5A0E12B72C6F5004D0D5D /* MainExperienceViewController.swift */,
+				FA86947F2ED3748700E2394E /* ItemSizeScalarSheetViewController.swift */,
+				882C31ACED6E46B1BD340B9F /* MainExperienceViewController+Subgraph.swift */,
+				FAE9252365164B5D9542BB10 /* SubgraphSheetViewController.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* EdgeLegendSheetViewController.swift */,
+			);
+			path = MainExperience;
+			sourceTree = "<group>";
+		};
+		FAA5A0E42B72C6F5004D0D5D /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0E52B72C6F5004D0D5D /* MultipeerSession.swift */,
+				0C99E96C976841D59C6AF439 /* MainExperienceViewController+MultipeerDelegate.swift */,
+			);
+			path = Multipeer;
+			sourceTree = "<group>";
+		};
+		FAA5A0ED2B72C767004D0D5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0B82B72C611004D0D5D /* Main.storyboard */,
+				FAA5A0BB2B72C611004D0D5D /* Assets.xcassets */,
+				FAA5A0BD2B72C611004D0D5D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAA5A0EE2B72C7D1004D0D5D /* AtomicView */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5A0EF2B72C7D1004D0D5D /* MessageLabel.swift */,
+				FAA5A0F02B72C7D1004D0D5D /* CameraView.swift */,
+			);
+			path = AtomicView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA5A0AE2B72C611004D0D5D /* ADAR2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA5A0C32B72C611004D0D5D /* Build configuration list for PBXNativeTarget "ADAR2" */;
+			buildPhases = (
+				FAA5A0AB2B72C611004D0D5D /* Sources */,
+				FAA5A0AC2B72C611004D0D5D /* Frameworks */,
+				FAA5A0AD2B72C611004D0D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADAR2;
+			packageProductDependencies = (
+				FAA5A0F52B72CA0B004D0D5D /* ADAR2Shared */,
+				FA8F82BB2E199D61004A4462 /* ADAR2BugDetector */,
+				FA000A0200000001000A0000 /* ADAR2NaiveForceDirectedVisualizer */,
+			);
+			productName = "ADAR2 Legacy";
+			productReference = FAA5A0AF2B72C611004D0D5D /* ADAR2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAAC15F52D2BB954006D829B /* ADAR2 (Demo mode) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAC16112D2BB954006D829B /* Build configuration list for PBXNativeTarget "ADAR2 (Demo mode)" */;
+			buildPhases = (
+				FAAC15F72D2BB954006D829B /* Sources */,
+				FAAC160B2D2BB954006D829B /* Frameworks */,
+				FAAC160D2D2BB954006D829B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ADAR2 (Demo mode)";
+			packageProductDependencies = (
+				FAAC15F62D2BB954006D829B /* ADAR2Shared */,
+				FA8F82BD2E199D69004A4462 /* ADAR2BugDetector */,
+				FA000A0300000001000A0000 /* ADAR2NaiveForceDirectedVisualizer */,
+			);
+			productName = "ADAR2 Legacy";
+			productReference = FAAC16142D2BB954006D829B /* ADAR2 (Demo mode).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA5A0A72B72C611004D0D5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FAA5A0AE2B72C611004D0D5D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = FAA5A0AA2B72C611004D0D5D /* Build configuration list for PBXProject "ADAR2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA5A0A62B72C611004D0D5D;
+			packageReferences = (
+				FAA5A0F42B72CA0B004D0D5D /* XCLocalSwiftPackageReference "../ADAR2Shared" */,
+				FA8F82B92E199C23004A4462 /* XCLocalSwiftPackageReference "../ADAR2BugDetector" */,
+				FA000A0100000001000A0000 /* XCLocalSwiftPackageReference "../ADAR2NaiveForceDirectedVisualizer" */,
+			);
+			productRefGroup = FAA5A0B02B72C611004D0D5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA5A0AE2B72C611004D0D5D /* ADAR2 */,
+				FAAC15F52D2BB954006D829B /* ADAR2 (Demo mode) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA5A0AD2B72C611004D0D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5A0BF2B72C611004D0D5D /* LaunchScreen.storyboard in Resources */,
+				FA1BB7EB2D2BBDAF000925BF /* Assets.xcassets in Resources */,
+				FAA5A0BA2B72C611004D0D5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAC160D2D2BB954006D829B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAC160E2D2BB954006D829B /* LaunchScreen.storyboard in Resources */,
+				FA1BB7EC2D2BBDD5000925BF /* Assets.xcassets in Resources */,
+				FAAC16102D2BB954006D829B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA5A0AB2B72C611004D0D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5A0E82B72C6F5004D0D5D /* MainExperienceViewController+NodeBuilder.swift in Sources */,
+				FAA5A0E72B72C6F5004D0D5D /* MainExperienceViewController+ARSCNDelegate.swift in Sources */,
+				FAA5A0D62B72C661004D0D5D /* SIMD+extensions.swift in Sources */,
+				FA666E8D2C2335370044B430 /* UIApplication+Env.swift in Sources */,
+				FAA5A0F22B72C7D1004D0D5D /* CameraView.swift in Sources */,
+				FAA5A0D42B72C661004D0D5D /* ADARConnectionKind+UIColor.swift in Sources */,
+				FAA5A0F12B72C7D1004D0D5D /* MessageLabel.swift in Sources */,
+				FAA5A0B32B72C611004D0D5D /* AppDelegate.swift in Sources */,
+				FAA5A0D22B72C661004D0D5D /* UserRole.swift in Sources */,
+				FAA5A0EA2B72C6F5004D0D5D /* MainExperienceViewController.swift in Sources */,
+				FAA5A0EC2B72C6F5004D0D5D /* MultipeerSession.swift in Sources */,
+				FA39BD9B2E19622F00791E8B /* DisplayMode.swift in Sources */,
+				FAA5A0D72B72C661004D0D5D /* SCNVector3+Operators.swift in Sources */,
+				FAA5A0D52B72C661004D0D5D /* CylinderLine.swift in Sources */,
+				FA8694812ED3748700E2394E /* ItemSizeScalarSheetViewController.swift in Sources */,
+				FAA5A0EB2B72C6F5004D0D5D /* MainExperienceController+ARCoachingOverlayViewDelegate.swift in Sources */,
+				FA39BDA12E19775E00791E8B /* ADARSCNNode.swift in Sources */,
+				FAA5A0E92B72C6F5004D0D5D /* MainExperienceViewController+Gestures.swift in Sources */,
+				FAA5A0B52B72C611004D0D5D /* SceneDelegate.swift in Sources */,
+				FAA5A0E62B72C6F5004D0D5D /* IntroViewController.swift in Sources */,
+				FAA5A0D82B72C661004D0D5D /* NodeTransformData.swift in Sources */,
+				FAA5A0D32B72C661004D0D5D /* SettingsProvider.swift in Sources */,
+				29159E44A09446C699E689A3 /* FileSession.swift in Sources */,
+				569CCD0377274293BBC66C96 /* GraphSceneBuilder.swift in Sources */,
+				A6835BFE05AE47EAB39B0EAA /* MainExperienceViewController+MultipeerDelegate.swift in Sources */,
+				0EAF0EE6846D44B5929F6B46 /* MainExperienceViewController+Subgraph.swift in Sources */,
+				7EFD1D970BEB4AF78D6651CD /* SubgraphSheetViewController.swift in Sources */,
+				B2A1C3D4E5F6A7B8C9D0E1F2 /* EdgeLegendSheetViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAC15F72D2BB954006D829B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAC15F82D2BB954006D829B /* MainExperienceViewController+NodeBuilder.swift in Sources */,
+				FAAC15F92D2BB954006D829B /* MainExperienceViewController+ARSCNDelegate.swift in Sources */,
+				FAAC15FA2D2BB954006D829B /* SIMD+extensions.swift in Sources */,
+				FAAC15FB2D2BB954006D829B /* UIApplication+Env.swift in Sources */,
+				FAAC15FC2D2BB954006D829B /* CameraView.swift in Sources */,
+				FAAC15FD2D2BB954006D829B /* ADARConnectionKind+UIColor.swift in Sources */,
+				FAAC15FE2D2BB954006D829B /* MessageLabel.swift in Sources */,
+				FAAC15FF2D2BB954006D829B /* AppDelegate.swift in Sources */,
+				FAAC16002D2BB954006D829B /* UserRole.swift in Sources */,
+				FAAC16012D2BB954006D829B /* MainExperienceViewController.swift in Sources */,
+				FAAC16022D2BB954006D829B /* MultipeerSession.swift in Sources */,
+				FA39BD9C2E19622F00791E8B /* DisplayMode.swift in Sources */,
+				FAAC16032D2BB954006D829B /* SCNVector3+Operators.swift in Sources */,
+				FAAC16042D2BB954006D829B /* CylinderLine.swift in Sources */,
+				FA8694802ED3748700E2394E /* ItemSizeScalarSheetViewController.swift in Sources */,
+				FAAC16052D2BB954006D829B /* MainExperienceController+ARCoachingOverlayViewDelegate.swift in Sources */,
+				FA39BDA02E19775E00791E8B /* ADARSCNNode.swift in Sources */,
+				FAAC16062D2BB954006D829B /* MainExperienceViewController+Gestures.swift in Sources */,
+				FAAC16072D2BB954006D829B /* SceneDelegate.swift in Sources */,
+				FAAC16082D2BB954006D829B /* IntroViewController.swift in Sources */,
+				FAAC16092D2BB954006D829B /* NodeTransformData.swift in Sources */,
+				FAAC160A2D2BB954006D829B /* SettingsProvider.swift in Sources */,
+				0CC87A84260842AE9E960E29 /* FileSession.swift in Sources */,
+				27BF6ECABD5C4AF29FC3C038 /* GraphSceneBuilder.swift in Sources */,
+				0B4A07C44E47422DA434D37B /* MainExperienceViewController+MultipeerDelegate.swift in Sources */,
+				6143CD5492C64AAD93304E4F /* MainExperienceViewController+Subgraph.swift in Sources */,
+				3609CBF8F86D44FD86D8B324 /* SubgraphSheetViewController.swift in Sources */,
+				C3D4E5F6A7B8C9D0E1F2A3B4 /* EdgeLegendSheetViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAA5A0B82B72C611004D0D5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA5A0B92B72C611004D0D5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA5A0BD2B72C611004D0D5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA5A0BE2B72C611004D0D5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA5A0C12B72C611004D0D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA5A0C22B72C611004D0D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA5A0C42B72C611004D0D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D85QWSUNYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADAR2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ADAR;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For the AR experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.adar.ADAR2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA5A0C52B72C611004D0D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D85QWSUNYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADAR2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ADAR;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For the AR experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.adar.ADAR2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAAC16122D2BB954006D829B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (demo mode)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D85QWSUNYA;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADAR2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ADAR (Demo)";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For the AR experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				OTHER_SWIFT_FLAGS = "-D ADAR_DEMO_MODE";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.edu.ukma.adar.ADAR2-demo-mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAAC16132D2BB954006D829B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (demo mode)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D85QWSUNYA;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADAR2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ADAR (Demo)";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For the AR experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				OTHER_SWIFT_FLAGS = "-D ADAR_DEMO_MODE";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.edu.ukma.adar.ADAR2-demo-mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA5A0AA2B72C611004D0D5D /* Build configuration list for PBXProject "ADAR2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA5A0C12B72C611004D0D5D /* Debug */,
+				FAA5A0C22B72C611004D0D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA5A0C32B72C611004D0D5D /* Build configuration list for PBXNativeTarget "ADAR2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA5A0C42B72C611004D0D5D /* Debug */,
+				FAA5A0C52B72C611004D0D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAC16112D2BB954006D829B /* Build configuration list for PBXNativeTarget "ADAR2 (Demo mode)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAC16122D2BB954006D829B /* Debug */,
+				FAAC16132D2BB954006D829B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FA000A0100000001000A0000 /* XCLocalSwiftPackageReference "../ADAR2NaiveForceDirectedVisualizer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ADAR2NaiveForceDirectedVisualizer;
+		};
+		FA8F82B92E199C23004A4462 /* XCLocalSwiftPackageReference "../ADAR2BugDetector" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ADAR2BugDetector;
+		};
+		FAA5A0F42B72CA0B004D0D5D /* XCLocalSwiftPackageReference "../ADAR2Shared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ADAR2Shared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA000A0200000001000A0000 /* ADAR2NaiveForceDirectedVisualizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA000A0100000001000A0000 /* XCLocalSwiftPackageReference "../ADAR2NaiveForceDirectedVisualizer" */;
+			productName = ADAR2NaiveForceDirectedVisualizer;
+		};
+		FA000A0300000001000A0000 /* ADAR2NaiveForceDirectedVisualizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA000A0100000001000A0000 /* XCLocalSwiftPackageReference "../ADAR2NaiveForceDirectedVisualizer" */;
+			productName = ADAR2NaiveForceDirectedVisualizer;
+		};
+		FA8F82BB2E199D61004A4462 /* ADAR2BugDetector */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ADAR2BugDetector;
+		};
+		FA8F82BD2E199D69004A4462 /* ADAR2BugDetector */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ADAR2BugDetector;
+		};
+		FAA5A0F52B72CA0B004D0D5D /* ADAR2Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ADAR2Shared;
+		};
+		FAAC15F62D2BB954006D829B /* ADAR2Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ADAR2Shared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FAA5A0A72B72C611004D0D5D /* Project object */;
+}

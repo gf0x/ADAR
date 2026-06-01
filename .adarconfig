@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "high_degree_node":  "warning",
+    "low_cohesion_edge": "warning",
+    "cycle_edge":        "warning",
+    "edge_crossing":     "warning"
+  }
+}

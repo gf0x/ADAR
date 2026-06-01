@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["*"]
+  pull_request:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build root facade
+        run: swift build
+      - name: Test packages with coverage
+        run: |
+          for package in \
+            ADAR2Shared \
+            ADAR2Core \
+            ADAR2BugDetector \
+            ADAR2AdvancedForceDirectedVisualizer \
+            ADAR2NaiveForceDirectedVisualizer \
+            ADAR2MLVisualizer \
+            ADAR2SwiftAnalyzer
+          do
+            swift test --package-path "$package" --enable-code-coverage
+          done
+      - name: Build executable packages
+        run: |
+          swift build --package-path ADAR2ModelBuilder
+          swift build --package-path ADAR2LintPlugin
+          swift build --package-path ADAR2VisualisationTestComponent
+      - name: Build unsigned iOS simulator app
+        run: |
+          xcodebuild -workspace ADAR2.xcworkspace -scheme ADAR2 \
+            -sdk iphonesimulator CODE_SIGNING_ALLOWED=NO build
+      - name: Upload coverage
+        uses: codecov/codecov-action@v6
+        with:
+          use_oidc: true

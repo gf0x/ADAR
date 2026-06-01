@@ -1,0 +1,125 @@
+Examples
+
+# Xcode
+#
+.DS_Store
+.idea/
+*.swp
+*.lock
+*.xcuserstate
+
+# IDE
+#
+*.workspace
+*.xcworkspace
+*.xcuserdata
+*.xcuserdatad
+*.xccheckout
+*.xcodeproj
+
+# Swift Package Manager
+#
+.build/
+.swiftpm/xcode/
+Packages
+Package.pins
+Package.resolved
+
+# Carthage
+#
+Carthage/Build
+Carthage/Checkouts
+Carthage/Repositories
+
+# CocoaPods
+#
+Pods/
+Podfile.lock
+Podfile.scripts/
+
+# fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/report.json
+
+# Code Injection
+#
+ci/
+
+# App Code
+#
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Provisioning Profiles
+#
+*.mobileprovision
+*.provisionprofile
+
+# Symbolication
+#
+*.bcsymbolmap
+
+# Playgrounds
+#
+timeline.xctimeline
+playground.xcworkspace
+
+# Device Data
+#
+*.deviceinfo
+
+# Other
+#
+*.moved-aside
+DerivedData/
+tmp/
+
+# Obj-C/Swift specific
+#
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcscheme
+*.xccheckout
+
+# Archives
+#
+*.xcarchive
+
+# Backup files
+#
+*.bak
+
+# Package Manager
+#
+Package.resolved
+
+# Logs
+#
+*.log
+
+# Build Products
+#
+*.o
+*.a
+*.pyc
+*.class
+*.dll
+*.exe
+*.cache
+*.min.js
+*.bundle.js
+*.gz
+*.map
+*.obj
+
+# Custom Scheme
+#
+*.xcscheme
+*.xcsettings
