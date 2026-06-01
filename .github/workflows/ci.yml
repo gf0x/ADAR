@@ -50,7 +50,7 @@ jobs:
             ADAR2MLVisualizer \
             ADAR2SwiftAnalyzer
           do
-            profdata="$package/.build/debug/codeco
+            profdata="$package/.build/debug/codecov/default.profdata"
             [ -f "$profdata" ] || continue
             find "$package/.build/debug" -name "*.xctest" | while read xctest; do
               binary_name=$(basename "$xctest" .xctest)
