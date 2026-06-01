@@ -3,3 +3,7 @@ coverage:
     project: false
     patch: false
 comment: false
+
+ignore:
+  # Abstract API scaffold: concrete graph subclasses provide the executable behavior.
+  - "ADAR2Core/Sources/ADAR2Core/Graph/Graph.swift"

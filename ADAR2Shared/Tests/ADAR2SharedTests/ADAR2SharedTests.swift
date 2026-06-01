@@ -20,4 +20,18 @@ final class ADAR2SharedTests: XCTestCase {
         XCTAssertEqual(decoded.connections, [edge])
         XCTAssertEqual(decoded.bugReport?.cycleEdges, [edge])
     }
+
+    func testConnectionKindsAndOptionalInitializer() {
+        XCTAssertTrue(ADARConnection.Kind.methodOf.isDeclaration)
+        XCTAssertFalse(ADARConnection.Kind.methodUsesMethod.isDeclaration)
+        XCTAssertTrue(ADARConnection.Kind.methodUsesMethod.isUsageKind)
+        XCTAssertNil(ADARConnection(sourceId: "a", targetId: "b", kind: nil))
+
+        let declaration = ADARNode.Declaration(
+            id: "id", displayName: "Display", kind: .method,
+            sourceFile: "/tmp/File.swift", sourceLine: 3
+        )
+        XCTAssertEqual(declaration.description, "Display(method)")
+        XCTAssertEqual(ADARNode(declaration: declaration, position: .zero).id, "id")
+    }
 }

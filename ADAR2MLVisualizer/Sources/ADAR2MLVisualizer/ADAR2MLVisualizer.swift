@@ -74,7 +74,8 @@ public final class ADAR2MLVisualizer<CoreVisualizer: ADARForceDirectedVisualizer
         else { fatalError("Could not find the Core ML model in the project.") }
         
         let config = MLModelConfiguration() // TODO: (later) check whether extra config is needed
-        return try! MLModel(contentsOf: modelURL, configuration: config)
+        let compiledModelURL = try! MLModel.compileModel(at: modelURL)
+        return try! MLModel(contentsOf: compiledModelURL, configuration: config)
     }
 
     private func prepareInput(from graph: AbstractGraph<NodeData, EdgeData>) -> MLDictionaryFeatureProvider {
